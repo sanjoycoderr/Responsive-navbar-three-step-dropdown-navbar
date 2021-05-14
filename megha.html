@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .clear1 {
+            clear: both;
+            background-color: blueviolet;
+        }
+        
+        .logo {
+            float: left;
+            margin-left: 10%;
+            padding: 10px 8px;
+        }
+        
+        .nav {
+            border: 1px solid black;
+            height: 40px;
+        }
+        
+        .nav a {
+            float: left;
+            text-decoration: none;
+            padding: 10px 5px;
+            margin: 0px 10px;
+        }
+        
+        .menu {
+            margin-left: 50%;
+        }
+        
+        .nav .icon {
+            display: none;
+        }
+        
+        .dropdown-content {
+            position: absolute;
+            top: 40px;
+            width: 99%;
+            border: 1px solid black;
+            left: 0;
+            display: none;
+        }
+        
+        .dropdown-content a {
+            margin: 0px 8%;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        @media(max-width: 600px) {
+            .nav a,
+            .dropdown {
+                display: none;
+            }
+            .nav .icon {
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 0;
+                z-index: 33;
+            }
+        }
+        
+        @media(max-width: 600px) {
+            .clear {
+                clear: both;
+                background-color: aqua;
+            }
+            .responsive a:not(:last-child) {
+                position: relative;
+                float: none;
+                text-align: left;
+                display: block !important;
+                border: 1px solid black;
+                left: 0;
+                top: 3px;
+            }
+            .menu {
+                margin-left: 0px !important;
+            }
+            .responsive .dropdown {
+                display: block;
+                float: none;
+            }
+            .responsive .dropdown .dropdown-content {
+                position: relative;
+            }
+            .dropdown-content {
+                top: 0px;
+            }
+            .dropdown-content a {
+                margin-left: 10px;
+            }
+            .clear2 {
+                clear: both;
+            }
+        }
+        
+        .subdropdown {
+            float: left;
+            margin-left: 5%;
+        }
+        
+        .subdropdown .sub-dropdown-content a {
+            float: none !important;
+            margin: 0;
+            display: block;
+        }
+        
+        .sub-dropdown-content {
+            border: 1px solid rgb(192, 248, 8);
+            position: relative;
+            left: 5px;
+        }
+        
+        .sub-dropdown-content {
+            display: none;
+        }
+        
+        .subdropdown:hover .sub-dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="nav" id="navbar">
+            <div class="logo">logo</div>
+            <div class="clear"></div>
+            <div class="menu">
+                <a href="#" class="menu-item">home</a>
+                <a href="#" class="menu-item">about</a>
+                <div class="dropdown">
+                    <a href="#" class="dropbotton">dropdown</a>
+                    <div class="dropdown-content">
+
+
+                        <!-- --------------------submenu------------- -->
+                        <div class="subdropdown">
+                            <a href="#">link1 subdropdown</a>
+                            <div class="clear1"></div>
+
+                            <div class="sub-dropdown-content">
+                                <a href="#" class="item">sublink1</a>
+                                <a href="#" class="item">sublink2</a>
+                                <a href="#" class="item">sublink3</a>
+                                <a href="#" class="item">sublink4</a>
+                            </div>
+                        </div>
+                        <div class="clear2"></div>
+
+                        <!-- -------------------end -submenu------------- -->
+                        <!-- --------------------submenu------------- -->
+
+                        <div class="subdropdown">
+                            <a href="#">link2 subdropdown</a>
+                            <div class="clear1"></div>
+
+                            <div class="sub-dropdown-content">
+                                <a href="#" class="item">sublink1</a>
+                                <a href="#" class="item">sublink2</a>
+                                <a href="#" class="item">sublink3</a>
+                                <a href="#" class="item">sublink4</a>
+                            </div>
+                        </div>
+                        <div class="clear2"></div>
+                        <!-- -------------------end -submenu------------- -->
+                        <!-- --------------------submenu------------- -->
+                        <div class="subdropdown">
+                            <a href="#">link3 subdropdown</a>
+                            <div class="clear1"></div>
+
+                            <div class="sub-dropdown-content">
+                                <a href="#" class="item">sublink1</a>
+                                <a href="#" class="item">sublink2</a>
+                                <a href="#" class="item">sublink3</a>
+                                <a href="#" class="item">sublink4</a>
+                            </div>
+                        </div>
+                        <div class="clear2"></div>
+                        <!-- -------------------end -submenu------------- -->
+                        <!-- --------------------submenu------------- -->
+                        <div class="subdropdown">
+                            <a href="#">link4 subdropdown</a>
+                            <div class="clear1"></div>
+
+                            <div class="sub-dropdown-content">
+                                <a href="#" class="item">sublink1</a>
+                                <a href="#" class="item">sublink2</a>
+                                <a href="#" class="item">sublink3</a>
+                                <a href="#" class="item">sublink4</a>
+                            </div>
+                        </div>
+                        <div class="clear2"></div>
+                        <!-- -------------------end -submenu------------- -->
+                        <!-- --------------------submenu------------- -->
+
+                        <div class="subdropdown">
+                            <a href="#">link5 subdropdown</a>
+                            <div class="clear1"></div>
+
+                            <div class="sub-dropdown-content">
+                                <a href="#" class="item">sublink1</a>
+                                <a href="#" class="item">sublink2</a>
+                                <a href="#" class="item">sublink3</a>
+                                <a href="#" class="item">sublink4</a>
+                            </div>
+                        </div>
+                        <div class="clear2"></div>
+
+                        <!-- -------------------end -submenu------------- -->
+
+                    </div>
+                </div>
+                <a href="#" class="menu-item">service</a>
+                <a href="#" class="icon">&#9776;</a>
+
+            </div>
+        </nav>
+    </header>
+    <script type="text/javascript">
+        function myfun() {
+            var button = document.querySelector(".icon");
+            button.addEventListener('click', function() {
+                var navbar = document.querySelector("#navbar");
+                if (navbar.className === "nav") {
+                    navbar.className += " responsive";
+
+                } else {
+                    navbar.className = 'nav';
+
+                }
+            })
+
+        }
+        myfun();
+    </script>
+</body>
+
+</html>
